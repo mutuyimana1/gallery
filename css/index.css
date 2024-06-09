@@ -1,0 +1,33 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 10px; */
+}
+.contentGallery{
+    position: relative;
+    width: 293px;
+    height: 588px;
+    display: flex;
+}
+.galleryElement{
+    position: absolute;
+    color: white;
+    bottom: 30px;
+    left: 30px;
+}
+.galleryElement h1{
+    font-size:"38px";
+    text-transform: uppercase;
+    font-weight: 700px;
+    
+}
+.galleryElement p{
+    font-size: 12px;
+    font-weight: 400px;
+}
