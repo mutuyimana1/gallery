@@ -4,7 +4,8 @@ body{
     box-sizing: border-box;
 }
 .container{
-    margin: 5px;
+    margin: auto;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     /* gap: 10px; */
@@ -14,6 +15,12 @@ body{
     width: 293px;
     height: 588px;
     display: flex;
+    overflow: hidden;
+}
+.contentGallery:hover .galleryElement{
+    bottom: 50px;
+	transition: .3s ease-in-out;
+
 }
 .galleryElement{
     position: absolute;
@@ -31,6 +38,32 @@ body{
     font-size: 12px;
     font-weight: 400px;
 }
+.contentGallery img{
+    -webkit-transform: scale(0.5);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.contentGallery:hover img{
+    -webkit-transform: scale(1);
+	transform: scale(1.1);
+    -webkit-filter: grayscale(100%) blur(200px);
+	filter: grayscale(100%)
+}
+.contentGallery:hover .btn{
+    display: block;
+	transition: .3s ease-in-out;
+
+}
+.btn{
+    position: absolute;
+    color: rgb(50, 134, 173);
+    bottom: 15px;
+    font-size: 18px;
+    left: 30px;
+    display: none;
+}
+
 @media screen and (max-width: 992px) {
     .container {
       display: flex;
